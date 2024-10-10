@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://curdopwithredux-in-mern.onrender.com/api/getStudents")
+      .post("https://curdopwithredux-in-mern.onrender.com/api/getStudents")
       .then((response) => {
         setData(response.data);
         console.log("data", response.data);
