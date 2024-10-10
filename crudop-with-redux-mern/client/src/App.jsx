@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/getStudents")
+      .get("https://curdopwithredux-in-mern.onrender.com/api/getStudents")
       .then((response) => {
         setData(response.data);
         console.log("data", response.data);
@@ -45,7 +45,7 @@ function App() {
       return;
     } else {
       try {
-        await axios.delete(`http://localhost:8000/api/deleteStudent/${id}`);
+        await axios.delete(`https://curdopwithredux-in-mern.onrender.com/api/deleteStudent/${id}`);
         console.log("Post deleted:", id);
         setData(data.filter((post) => post._id !== id));
       } catch (error) {
@@ -56,7 +56,7 @@ function App() {
 
   // const handlesave = () => {
   //   axios
-  //     .post("http://localhost:8000/api/create", {
+  //     .post("https://curdopwithredux-in-mern.onrender.com/api/create", {
   //       id,
   //       name,
   //       age,
@@ -81,7 +81,7 @@ function App() {
 
   // const handleUpdate = (_id) => {
   //   axios
-  //     .put(`http://localhost:8000/api/updateStudent/${_id}`, {
+  //     .put(`https://curdopwithredux-in-mern.onrender.com/api/updateStudent/${_id}`, {
   //       id,
   //       name,
   //       age,

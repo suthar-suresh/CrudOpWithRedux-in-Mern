@@ -21,7 +21,7 @@ function Update() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/getoneStudent/${id}`)
+      .get(`https://curdopwithredux-in-mern.onrender.com/api/getoneStudent/${id}`)
       .then((response) => {
         console.log(response);
         setUser(response.data);
@@ -35,7 +35,7 @@ function Update() {
     event.preventDefault();
     console.log(user);
     await axios
-      .put(`http://localhost:8000/api/updateStudent/${id}`, user)
+      .put(`https://curdopwithredux-in-mern.onrender.com/api/updateStudent/${id}`, user)
       .then((response) => {
         console.log(response);
       })

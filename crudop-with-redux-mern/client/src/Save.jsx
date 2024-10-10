@@ -36,7 +36,7 @@ function Save() {
     onSubmit: async (values) => {
       // alert(JSON.stringify(values, null, 2));
       await axios
-        .post("http://localhost:8000/api/create", values)
+        .post("https://curdopwithredux-in-mern.onrender.com/api/create", values)
         .then((response) => {
           console.log(response.data);
         })

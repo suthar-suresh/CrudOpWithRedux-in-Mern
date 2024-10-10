@@ -14,10 +14,12 @@ app.use(bodyParser.raw());
 app.use(bodyParser.text());
 
 const PORT = process.env.PORT || 5000;
+console.log('dfddff',process.env.MONGOURL);
 
 const URl = process.env.MONGOURL;
 
-mongoose.connect(URl).then(() => {
+mongoose.connect(URl,{useNewUrlParser: true,
+  useUnifiedTopology: true,}).then(() => {
   console.log("MongoDB Connected");
 
   app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
