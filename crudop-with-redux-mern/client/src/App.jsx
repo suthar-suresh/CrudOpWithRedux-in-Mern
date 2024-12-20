@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .post("https://curdopwithredux-in-mern.onrender.com/api/getStudents")
+      .post("https://crud-op-with-redux-in-mern.vercel.app//api/getStudents")
       .then((response) => {
         setData(response.data);
         console.log("data", response.data);
@@ -56,7 +56,7 @@ function App() {
 
   // const handlesave = () => {
   //   axios
-  //     .post("https://curdopwithredux-in-mern.onrender.com/api/create", {
+  //     .post("https://crud-op-with-redux-in-mern.vercel.app//api/create", {
   //       id,
   //       name,
   //       age,
