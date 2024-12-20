@@ -8,7 +8,7 @@ import router from "./routes/studentRoutes.js";
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: 'https://fuzzy-parakeet-v66xqjjprg7whw66p-5173.app.github.dev/', // Replace with your frontend URL
+  origin: 'https://crud-op-with-redux-in-mern-v9t3.vercel.app/', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   credentials: true, // Allow cookies if needed
