@@ -36,7 +36,7 @@ function Save() {
     onSubmit: async (values) => {
       // alert(JSON.stringify(values, null, 2));
       await axios
-        .post("https://crud-op-with-redux-in-mern.vercel.app//api/create", values)
+        .post("https://crud-op-with-redux-in-mern.vercel.app/api/create", values)
         .then((response) => {
           console.log(response.data);
         })
